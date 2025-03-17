@@ -21,7 +21,6 @@ interface LoginProps {
 export const LogIn: FC<LoginProps> = (props) => {
   return (
     <Card className="flex gap-2 flex-col min-w-[300px]">
-     <Image classname="h-10 w-100" src={"danrevi-logo.svg"} />
       <CardHeader className="gap-2">
         <CardTitle className="text-2xl flex gap-2">
           <Avatar className="h-8 w-8">
