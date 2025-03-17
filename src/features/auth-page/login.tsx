@@ -23,7 +23,7 @@ export const LogIn: FC<LoginProps> = (props) => {
     <Card className="flex gap-2 flex-col min-w-[300px]">
       <CardHeader className="gap-2">
         <CardTitle className="text-2xl flex gap-2">
-          <Avatar className="h-8 w-8">
+          <Avatar className="h-12 w-12">
             <AvatarImage src={"danbot-icon.png"} />
           </Avatar>
           <span className="text-primary">{AI_NAME}</span>
