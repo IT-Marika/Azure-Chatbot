@@ -21,21 +21,19 @@ interface LoginProps {
 export const LogIn: FC<LoginProps> = (props) => {
   return (
     <Card className="flex gap-2 flex-col min-w-[300px]">
+     <Image classname="h-10 w-100" src={"danrevi-logo.svg"} />
       <CardHeader className="gap-2">
         <CardTitle className="text-2xl flex gap-2">
           <Avatar className="h-8 w-8">
-            <AvatarImage src={"danrevi-logo.png"} />
+            <AvatarImage src={"ai-icon.png"} />
           </Avatar>
           <span className="text-primary">{AI_NAME}</span>
         </CardTitle>
         <CardDescription>
-          Login in with your GitHub or Microsoft 365 account
+          Login in with your Microsoft 365 account
         </CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
-        {props.githubEnabled && (
-          <Button onClick={() => signIn("github")}>GitHub</Button>
-        )}
         {props.entraIdEnabled && (
           <Button onClick={() => signIn("azure-ad")}>Microsoft 365</Button>
         )}
