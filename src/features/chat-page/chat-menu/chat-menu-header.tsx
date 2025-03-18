@@ -6,7 +6,7 @@ export const ChatMenuHeader = () => {
   return (
     
     <div className="flex p-2 px-3 gap-4 justify-end">  
-      <img src={'/danrevi-logo.svg'} width="130" />
+      <img src={'/danrevi-logo.svg'} width="150" />
       <form action={CreateChatAndRedirect} className="flex gap-2 pr-3">
         <NewChat />
         <ChatContextMenu />
