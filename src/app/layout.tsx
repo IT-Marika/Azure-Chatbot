@@ -24,7 +24,6 @@ export default function RootLayout({
       <body
         className={cn(inter.className, "h-full w-full flex  bg-background")}
       >
-        <h1>Værdifuld viden om økonomi</h1>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
@@ -34,7 +33,6 @@ export default function RootLayout({
           {children}
           <Toaster />
         </ThemeProvider>
-      <img src={'/danrevi-logo.svg'} width="500" />
       </body>
     </html>
   );
