@@ -57,3 +57,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+.bgtext {
+            position: relative;
+        }
+
+.bgtext:before {
+            margin: 3rem;
+            content: "Værdifuld viden om økonomi";
+            font-size: 15vw;
+            position: absolute;
+            color: rgba(187, 182, 182,0.3);
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
