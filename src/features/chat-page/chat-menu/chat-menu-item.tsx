@@ -58,21 +58,21 @@ export const ChatMenuItem: FC<ChatMenuItemProps> = (props) => {
           >
             <BookmarkCheck size={18} />
             <span>
-              {props.chatThread.bookmarked ? "Remove bookmark" : "Bookmark"}
+              {props.chatThread.bookmarked ? "Slet bogmærke" : "Bogmærke"}
             </span>
           </DropdownMenuItemWithIcon>
           <DropdownMenuItemWithIcon
             onClick={async () => await handleAction("rename")}
           >
             <Pencil size={18} />
-            <span>Rename</span>
+            <span>Omdøbe</span>
           </DropdownMenuItemWithIcon>
           <DropdownMenuSeparator />
           <DropdownMenuItemWithIcon
             onClick={async () => await handleAction("delete")}
           >
             <Trash size={18} />
-            <span>Delete</span>
+            <span>Slet</span>
           </DropdownMenuItemWithIcon>
         </DropdownMenuContent>
       </DropdownMenu>
