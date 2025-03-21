@@ -93,14 +93,14 @@ const useDropdownAction = (props: { chatThread: ChatThreadModel }) => {
         await BookmarkChatThread({ chatThread });
         break;
       case "rename":
-        const name = window.prompt("Enter the new name for the chat thread:");
+        const name = window.prompt("Indtast det nye navn til chat:");
         if (name !== null) {
           await UpdateChatThreadTitle({ chatThread, name });
         }
         break;
       case "delete":
         if (
-          window.confirm("Are you sure you want to delete this chat thread?")
+          window.confirm("Er du sikker på, at du vil slette denne chat?")
         ) {
           await DeleteChatThreadByID(chatThread.id);
         }
