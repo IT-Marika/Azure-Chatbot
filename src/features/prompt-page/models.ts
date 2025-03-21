@@ -9,15 +9,15 @@ export const PromptModelSchema = z.object({
   name: z
     .string()
     .min(1, {
-      message: "Title cannot be empty",
+      message: "Titel må ikke være tom",
     })
-    .refine(refineFromEmpty, "Title cannot be empty"),
+    .refine(refineFromEmpty, "Titel må ikke være tom"),
   description: z
     .string()
     .min(1, {
-      message: "Description cannot be empty",
+      message: "Beskrivelse må ikke være tom",
     })
-    .refine(refineFromEmpty, "Description cannot be empty"),
+    .refine(refineFromEmpty, "Beskrivelse må ikke være tom"),
   createdAt: z.date(),
   isPublished: z.boolean(),
   userId: z.string(),
