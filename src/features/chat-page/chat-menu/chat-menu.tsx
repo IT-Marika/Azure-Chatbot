@@ -48,7 +48,7 @@ export const GroupChatThreadByType = (menuItems: Array<ChatThreadModel>) => {
     if (el.bookmarked) {
       groupedMenuItems.push({
         ...el,
-        groupName: "Favoritter",
+        groupName: "Bogmærket",
       });
     } else if (new Date(el.lastMessageAt) > sevenDaysAgo) {
       groupedMenuItems.push({
@@ -72,9 +72,9 @@ export const GroupChatThreadByType = (menuItems: Array<ChatThreadModel>) => {
   }, {} as Record<MenuItemsGroupName, Array<MenuItemsGroup>>);
 
   const records: Record<MenuItemsGroupName, Array<MenuItemsGroup>> = {
-    Bookmarked: menuItemsGrouped["Bookmarked"]?.sort(sortByTimestamp),
-    "Past 7 days": menuItemsGrouped["Past 7 days"]?.sort(sortByTimestamp),
-    Previous: menuItemsGrouped["Previous"]?.sort(sortByTimestamp),
+    Bogmærket: menuItemsGrouped["Bogmærket"]?.sort(sortByTimestamp),
+    "Sidste 7 dage": menuItemsGrouped["Sidste 7 dage"]?.sort(sortByTimestamp),
+    Tidligere: menuItemsGrouped["Tidligere"]?.sort(sortByTimestamp),
   };
 
   return records;
