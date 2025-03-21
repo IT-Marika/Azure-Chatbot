@@ -50,7 +50,6 @@ export const AddNewPersona: FC<Props> = (props) => {
       );
     }
   };
-
   return (
     <Sheet
       open={isOpened}
