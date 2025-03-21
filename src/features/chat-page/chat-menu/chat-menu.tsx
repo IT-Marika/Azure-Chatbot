@@ -48,17 +48,17 @@ export const GroupChatThreadByType = (menuItems: Array<ChatThreadModel>) => {
     if (el.bookmarked) {
       groupedMenuItems.push({
         ...el,
-        groupName: "Bookmarked",
+        groupName: "Bogmærket",
       });
     } else if (new Date(el.lastMessageAt) > sevenDaysAgo) {
       groupedMenuItems.push({
         ...el,
-        groupName: "Past 7 days",
+        groupName: "Sidste 7 dage",
       });
     } else {
       groupedMenuItems.push({
         ...el,
-        groupName: "Previous",
+        groupName: "Tidligere",
       });
     }
   });
