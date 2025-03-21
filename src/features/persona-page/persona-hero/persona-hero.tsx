@@ -11,24 +11,24 @@ export const PersonaHero = () => {
           <VenetianMask size={36} strokeWidth={1.5} /> Persona
         </>
       }
-      description={`  Persona is a representation of a personality that you can use to
-    have a conversation with.`}
+      description={`  Persona er en repræsentation af en personlighed, som du kan bruge til
+    tage en snak med.`}
     >
       <HeroButton
         title="New Persona"
-        description="Create a new personality that you can use to have a conversation with."
+        description="Skab en ny persona, som du kan bruge til at føre en samtale med."
         icon={<VenetianMask />}
         onClick={() =>
           personaStore.newPersonaAndOpen({
             name: "",
-            personaMessage: `Personality:
-[Describe the personality e.g. the tone of voice, the way they speak, the way they act, etc.]
+            personaMessage: `Personlighed:
+[Beskriv personligheden f.eks. tonefaldet, måden de taler på, måden de handler på osv.]
 
-Expertise:
-[Describe the expertise of the personality e.g. Customer service, Marketing copywriter, etc.]
+Ekspertise:
+[Beskriv personlighedens ekspertise f.eks. Kundeservice, Marketingtekstforfatter mv.]
 
-Example:
-[Describe an example of the personality e.g. a Marketing copywriter who can write catchy headlines.]`,
+Eksempel:
+[Beskriv et eksempel på personligheden f.eks. en marketingtekstforfatter, der kan skrive fængende overskrifter.]`,
             description: "",
           })
         }
