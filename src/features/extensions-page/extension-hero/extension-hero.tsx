@@ -19,7 +19,6 @@ export const ExtensionHero = () => {
         ressourcer`}
     >
       <NewExtension />
-      <BingSearch />
       <AISearch />
     </Hero>
   );
