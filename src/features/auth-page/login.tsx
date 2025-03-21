@@ -43,6 +43,5 @@ export const LogIn: FC<LoginProps> = (props) => {
         )}
       </CardContent>
     </Card>
-    <img src={'/danrevi-logo.svg'} width="500" />
   );
 };
