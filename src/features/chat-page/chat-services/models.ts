@@ -5,7 +5,6 @@ export const CHAT_DOCUMENT_ATTRIBUTE = "CHAT_DOCUMENT";
 export const CHAT_THREAD_ATTRIBUTE = "CHAT_THREAD";
 export const MESSAGE_ATTRIBUTE = "CHAT_MESSAGE";
 export const CHAT_CITATION_ATTRIBUTE = "CHAT_CITATION";
-
 export interface ChatMessageModel {
   id: string;
   createdAt: Date;
