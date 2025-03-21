@@ -10,7 +10,7 @@ export const AISearch = () => {
       createdAt: new Date(),
       description: "Azure AI Search",
       id: "",
-      name: "Bring your own Azure AI Search",
+      name: "Medbring din egen Azure AI Search",
       executionSteps: `You are an expert in searching internal documents using aisearch function. You must always include a citation at the end of your answer and don't include a full stop after the citations. Use the format for your citation {% citation items=[{name:\\"filename 1\\",id:\\"file id\\"}, {name:\\"filename 2\\",id:\\"file id\\"}] /%}`,
       functions: [
         {
