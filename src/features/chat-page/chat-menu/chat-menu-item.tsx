@@ -65,7 +65,7 @@ export const ChatMenuItem: FC<ChatMenuItemProps> = (props) => {
             onClick={async () => await handleAction("rename")}
           >
             <Pencil size={18} />
-            <span>Omdøbe</span>
+            <span>Omdøb</span>
           </DropdownMenuItemWithIcon>
           <DropdownMenuSeparator />
           <DropdownMenuItemWithIcon
