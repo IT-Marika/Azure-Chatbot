@@ -17,7 +17,7 @@ export const ChatContextMenu = () => {
 
   const handleAction = async () => {
     if (
-      window.confirm("Are you sure you want to delete all the chat threads?")
+      window.confirm("Er du sikker på, at du vil slette alle chattrådene?")
     ) {
       setIsLoading(true);
       const response = await DeleteAllChatThreads();
