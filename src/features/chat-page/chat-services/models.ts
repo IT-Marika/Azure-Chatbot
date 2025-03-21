@@ -58,7 +58,7 @@ export interface ToolsInterface {
   parameters: any;
 }
 
-export type MenuItemsGroupName = "Bogmærket" | "Sidste 7 dage" | "Tidligere";
+export type MenuItemsGroupName = "Bogmærker" | "Sidste 7 dage" | "Tidligere";
 
 export type MenuItemsGroup = {
   groupName: MenuItemsGroupName;
