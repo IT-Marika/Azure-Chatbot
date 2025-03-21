@@ -8,22 +8,22 @@ export const PromptHero = () => {
     <Hero
       title={
         <>
-          <Book size={36} strokeWidth={1.5} /> Prompt Library
+          <Book size={36} strokeWidth={1.5} /> Prompt Bibliotek
         </>
       }
       description={
-        "Prompt templates are statements or questions meant to help users get creative without having to come up with ideas from scratch."
+        "Prompt-skabeloner er udsagn eller spørgsmål, der kan hjælpe brugerne med at blive kreative uden at skulle komme med ideer fra bunden.."
       }
     >
       <HeroButton
-        title="Add New Prompt"
-        description="Build your own prompt template"
+        title="Ny Prompt"
+        description="Byg din egen Prompt skabelon"
         icon={<Book />}
         onClick={() => promptStore.newPrompt()}
       />
       <HeroButton
-        title="Whimsical City"
-        description="Image of miniature colourful city "
+        title="Hyggelig by"
+        description="Billede af miniature farverig by"
         icon={<BookImage />}
         onClick={() =>
           promptStore.updatePrompt({
@@ -39,26 +39,26 @@ export const PromptHero = () => {
         }
       />
       <HeroButton
-        title="Problem Framing"
-        description="Problem Framing for a new product"
+        title="Problemstilling"
+        description="Problemformulering for et nyt produkt"
         icon={<NotebookPen />}
         onClick={() =>
           promptStore.updatePrompt({
             createdAt: new Date(),
             id: "",
-            name: "Problem Framing",
+            name: "Problemstilling",
             description: `
-Given the following problem statement:
-[PROBLEM STATEMENT]
+Givet følgende problemformulering:
+[PROBLEMSTILLING]
 
-Generate a response with the following points:
-1. Problem framing
-2. Solution overview and recommendations 
-3. List down the recommended MVP Scope
-4. How to ensure user adoption
-5. How to measure success 
-8. List down similar products
-9. Potential sponsor question (5 questions) 
+Generer et svar med følgende punkter:
+1. Problemindramning
+2. Løsningsoversigt og anbefalinger 
+3. Liste det anbefalede MVP Scope ned
+4. Hvordan man sikrer brugeradoption
+5. Hvordan man måler succes 
+8. Liste ned lignende produkter
+9. Potentiel sponsorspørgsmål (5 spørgsmål)
               `,
             isPublished: false,
             type: "PROMPT",
