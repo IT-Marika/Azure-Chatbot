@@ -80,33 +80,33 @@ export const AddNewPersona: FC<Props> = (props) => {
                 </>
               )}
               <div className="grid gap-2">
-                <Label>Name</Label>
+                <Label>Navn</Label>
                 <Input
                   type="text"
                   required
                   name="name"
                   defaultValue={persona.name}
-                  placeholder="Name of your persona"
+                  placeholder="Navn på din persona"
                 />
               </div>
               <div className="grid gap-2">
-                <Label htmlFor="description">Short description</Label>
+                <Label htmlFor="description">Kort beskrivelse</Label>
                 <Input
                   type="text"
                   required
                   defaultValue={persona.description}
                   name="description"
-                  placeholder="Short description"
+                  placeholder="Kort beskrivelse"
                 />
               </div>
               <div className="grid gap-2 flex-1 ">
-                <Label htmlFor="personaMessage">Personality</Label>
+                <Label htmlFor="personaMessage">Personlighed</Label>
                 <Textarea
                   className="min-h-[300px]"
                   required
                   defaultValue={persona.personaMessage}
                   name="personaMessage"
-                  placeholder="Personality of your persona"
+                  placeholder="Personlighed af din persona"
                 />
               </div>
             </div>
