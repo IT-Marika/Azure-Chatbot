@@ -34,7 +34,6 @@ export const ChatMenu: FC<ChatMenuProps> = (props) => {
     </div>
   );
 };
-
 export const GroupChatThreadByType = (menuItems: Array<ChatThreadModel>) => {
   const groupedMenuItems: Array<MenuItemsGroup> = [];
 
