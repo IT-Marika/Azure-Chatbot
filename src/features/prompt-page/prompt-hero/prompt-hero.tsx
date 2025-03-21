@@ -29,9 +29,9 @@ export const PromptHero = () => {
           promptStore.updatePrompt({
             createdAt: new Date(),
             id: "",
-            name: "Whimsical City",
+            name: "Hyggelig by",
             description:
-              "Create A miniature city with colourful buildings and green trees with [iconic building]. The [iconic building] is in the centre of the image, surrounded by a blurred background with lots of [Native tree name] trees. The image has a dreamy and whimsical mood, with a shallow depth of field and a high angle view. The city looks like a toy or a model, with different styles and shapes of buildings.",
+              "Skab en by med farverige bygninger og grønne træer med [ikonisk bygning]. Den [ikoniske bygning] er i midten af ​​billedet, omgivet af en sløret baggrund med masser af [Native tree name] træer. Billedet har en drømmende og finurlig stemning med en lav dybdeskarphed og en høj vinkel. Byen ligner et stykke legetøj eller en model, med forskellige stilarter og former for bygninger.",
             isPublished: false,
             type: "PROMPT",
             userId: "",
