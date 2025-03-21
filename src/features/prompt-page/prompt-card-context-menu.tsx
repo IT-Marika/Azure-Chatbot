@@ -40,13 +40,13 @@ export const PromptCardContextMenu: FC<Props> = (props) => {
             onClick={() => promptStore.updatePrompt(props.prompt)}
           >
             <Pencil size={18} />
-            <span>Edit</span>
+            <span>Rediger</span>
           </DropdownMenuItemWithIcon>
           <DropdownMenuItemWithIcon
             onClick={async () => await handleAction("delete")}
           >
             <Trash size={18} />
-            <span>Delete</span>
+            <span>Slet</span>
           </DropdownMenuItemWithIcon>
         </DropdownMenuContent>
       </DropdownMenu>
@@ -62,7 +62,7 @@ const useDropdownAction = (props: { prompt: PromptModel }) => {
     setIsLoading(true);
     switch (action) {
       case "delete":
-        if (window.confirm(`Are you sure you want to delete ${prompt.name}?`)) {
+        if (window.confirm(`Er du sikker på, at du vil slette ${prompt.name}?`)) {
           await DeletePrompt(prompt.id);
           RevalidateCache({
             page: "prompt",
