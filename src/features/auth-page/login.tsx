@@ -26,15 +26,15 @@ export const LogIn: FC<LoginProps> = (props) => {
           <Avatar className="h-12 w-12">
             <AvatarImage src={"ai-icon.png"} />
           </Avatar>
-          <span className="text-primary">{AI_NAME}</span>
+          <span className="text-secondary">{AI_NAME}</span>
         </CardTitle>
         <CardDescription>
-          Login in with your Microsoft 365 account
+          Log ind med din Microsoft 365 konto
         </CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
         {props.entraIdEnabled && (
-          <Button onClick={() => signIn("azure-ad")}>LOGIN</Button>
+          <Button onClick={() => signIn("azure-ad")}>LOG IND</Button>
         )}
         {props.isDevMode && (
           <Button onClick={() => signIn("localdev")}>
@@ -43,5 +43,6 @@ export const LogIn: FC<LoginProps> = (props) => {
         )}
       </CardContent>
     </Card>
+    <img src={'/danrevi-logo.svg'} width="500" />
   );
 };
