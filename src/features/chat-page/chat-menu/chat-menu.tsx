@@ -48,7 +48,7 @@ export const GroupChatThreadByType = (menuItems: Array<ChatThreadModel>) => {
     if (el.bookmarked) {
       groupedMenuItems.push({
         ...el,
-        groupName: "Bogmærket",
+        groupName: "Favoritter",
       });
     } else if (new Date(el.lastMessageAt) > sevenDaysAgo) {
       groupedMenuItems.push({
