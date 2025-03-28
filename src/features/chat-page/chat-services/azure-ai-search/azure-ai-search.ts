@@ -19,11 +19,11 @@ const debug = process.env.DEBUG === "true";
 
 export interface AzureSearchDocumentIndex {
   id: string;
-  pageContent: string;
+  chunk: string;
   embedding?: number[];
   user: string;
   chatThreadId: string;
-  metadata: string;
+  title: string;
 }
 
 export type DocumentSearchResponse = {
@@ -219,8 +219,8 @@ export const IndexDocuments = async (
         id: uniqueId(),
         chatThreadId,
         user: await userHashedId(),
-        pageContent: doc,
-        metadata: fileName,
+        chunk: doc,
+        title: fileName,
         embedding: [],
       };
 
@@ -337,7 +337,7 @@ export const EmbedDocuments = async (
   try {
     if (debug) console.log("Embedding documents:", documents.map((d) => d.id));
     const openai = OpenAIEmbeddingInstance();
-    const contentsToEmbed = documents.map((d) => d.pageContent);
+    const contentsToEmbed = documents.map((d) => d.chunk);
 
     const embeddings = await openai.embeddings.create({
       input: contentsToEmbed,
@@ -435,12 +435,12 @@ const CreateSearchIndex = async (): Promise<
           filterable: true,
         },
         {
-          name: "pageContent",
+          name: "chunk",
           searchable: true,
           type: "Edm.String",
         },
         {
-          name: "metadata",
+          name: "title",
           type: "Edm.String",
         },
         {
